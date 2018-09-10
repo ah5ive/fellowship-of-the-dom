@@ -97,25 +97,28 @@ keepItSecretKeepItSafe();
 
 
 function makeBuddies() {
-    //var rivendell = document.getElementById("Rivendell");
+    var rivendell = document.getElementById("Rivendell");
     //console.log(rivendell);
-    //var aside =  document.createElement("aside");
-    //var buddieslist = document.createElement("ul");
+    var aside =  document.createElement("aside");
+    //console.log(aside);
+    var buddieslist = document.createElement("ul");
     //console.log(buddieslist);
-    //buddieslist.id = "mybuddy";
-//for loop
-//for (var k = 0; k < buddies.length; k = 1++){
-    // var buddiesli = document.createElement("li");
-    // buddiesli.id = (buddies[k]);
-    // buddiesli.textContent = (buddis[k]);
-    // console.log(buddies[k]);
+    buddieslist.id = "mybuddy";
+
+    //console.log(buddies.length);
+    for (var k = 0; k < buddies.length; k++){
+    var buddiesli = document.createElement("li");
+    buddiesli.id = (buddies[k]);
+    buddiesli.textContent = (buddies[k]);
+    //console.log(buddies[k]);
+    buddieslist.appendChild(buddiesli);
+    }
+  rivendell.appendChild(buddieslist);
 }
-//buddieslist.appendChild(buddiesli);
+   // buddieslist.appendChild(buddiesli);
   // create an aside tag
   // attach an unordered list of the 'buddies' in the aside
   // insert your aside as a child element of rivendell
-
-
 makeBuddies();
 // Part 5
 
