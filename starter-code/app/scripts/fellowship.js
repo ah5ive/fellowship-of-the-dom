@@ -58,8 +58,11 @@ function makeHobbits() {
     //console.log(hobbitlist);
     for (var j = 0; j < hobbits.length; j++){
     var hobbitli = document.createElement("li");
+    hobbitli.id = (hobbits[j]);
     //console.log(hobbitol);
     hobbitli.textContent = (hobbits[j]);
+    //class hobbit
+    hobbitli.className = "hobbit";
     //console.log(hobbitli);
     hobbitol.appendChild(hobbitli);
   }
@@ -74,13 +77,23 @@ makeHobbits();
 // Part 3
 
 function keepItSecretKeepItSafe() {
+    var getringdiv = document.createElement('div');
+    getringdiv.id="the-ring";
+    getringdiv.className = "magic-imbued-jewelry";
+    var frodo = document.getElementById('Frodo Baggins');
+   // console.log(frodo);
   // create a div with an id of 'the-ring'
   // give the div a class of 'magic-imbued-jewelry'
+    getringdiv.addEventListener("clicks",nazgulScreech);
+    //not working;
+    frodo.appendChild(getringdiv);
+    //call the function at index.html to play music
+   // console.log(getringdiv);
   // add the ring as a child of Frodo
   // Bonus: add an event listener so that when a user clicks on the ring, the nazgulScreech function (provided) is invoked
 }
 
-
+keepItSecretKeepItSafe();
 // Part 4
 
 
