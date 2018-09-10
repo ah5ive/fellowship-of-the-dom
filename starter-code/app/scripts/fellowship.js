@@ -26,7 +26,7 @@ var body = document.querySelector('body');
 function makeMiddleEarth() {
     var middleearth = document.createElement('section');
     middleearth.id="middleearth";
-    console.log(middleearth);
+    //console.log(middleearth);
 for (var i = 0; i < lands.length; i++){
     var article = document.createElement('article');
     article.id = (lands[i]);
@@ -81,29 +81,42 @@ function keepItSecretKeepItSafe() {
     getringdiv.id="the-ring";
     getringdiv.className = "magic-imbued-jewelry";
     var frodo = document.getElementById('Frodo Baggins');
-   // console.log(frodo);
+    //console.log(frodo);
   // create a div with an id of 'the-ring'
   // give the div a class of 'magic-imbued-jewelry'
     getringdiv.addEventListener("clicks",nazgulScreech);
     //not working;
     frodo.appendChild(getringdiv);
     //call the function at index.html to play music
-   // console.log(getringdiv);
+   //console.log(getringdiv);
   // add the ring as a child of Frodo
   // Bonus: add an event listener so that when a user clicks on the ring, the nazgulScreech function (provided) is invoked
 }
-
 keepItSecretKeepItSafe();
-// Part 4
+// Part 4 done
 
 
 function makeBuddies() {
+    //var rivendell = document.getElementById("Rivendell");
+    //console.log(rivendell);
+    //var aside =  document.createElement("aside");
+    //var buddieslist = document.createElement("ul");
+    //console.log(buddieslist);
+    //buddieslist.id = "mybuddy";
+//for loop
+//for (var k = 0; k < buddies.length; k = 1++){
+    // var buddiesli = document.createElement("li");
+    // buddiesli.id = (buddies[k]);
+    // buddiesli.textContent = (buddis[k]);
+    // console.log(buddies[k]);
+}
+//buddieslist.appendChild(buddiesli);
   // create an aside tag
   // attach an unordered list of the 'buddies' in the aside
   // insert your aside as a child element of rivendell
-}
 
 
+makeBuddies();
 // Part 5
 
 
