@@ -125,9 +125,13 @@ makeBuddies();
 
 function beautifulStranger() {
   // change the 'Strider' textnode to 'Aragorn'
+  var strider = document.getElementById("Strider");
+  //console.log(strider);
+  strider.textContent = "Aragorn";
+  //console.log(strider);
 }
 
-
+beautifulStranger();
 // Part 6
 
 function leaveTheShire() {
