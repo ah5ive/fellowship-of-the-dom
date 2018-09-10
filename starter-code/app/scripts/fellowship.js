@@ -134,11 +134,22 @@ function beautifulStranger() {
 beautifulStranger();
 // Part 6
 
+var shire = document.getElementById('The Shire');
+var shire = document.querySelector("ul")
+var rivendell = document.getElementById("Rivendell");
+console.log(rivendell);
+
 function leaveTheShire() {
+rivendell.appendChild(shire);
   // assemble the hobbits and move them to Rivendell
+  // var myremove = document.getElementById("hobbitlist");
+  // var joinlist = myremove.parentNode("hobbitlist");
+ // console.log(joinlist);
+
+  console.log(rivendell);
 }
 
-
+leaveTheShire();//part 6 done
 // Part 7
 
 
@@ -162,6 +173,7 @@ function theBalrog() {
 // Part 9
 
 function hornOfGondor() {
+  alert("The Horn Of Gandor has been blown!");
   // pop up an alert that the horn of gondor has been blown
   // Boromir's been killed by the Uruk-hai!
   // put a linethrough on boromir's name
